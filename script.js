@@ -1,7 +1,5 @@
 var body = document.getElementsByTagName('body');
 var html = document.getElementsByTagName('html');
-var masterDiv = document.createElement('div')
-masterDiv.className = 'master';
 var color = 82;
 var myArr = [];
 function colorizer_base(temp){
