@@ -15,10 +15,10 @@ function setSize(temp){
 }
 
 function colorizer_gradient(temp){
-	var rand = function(){ return Math.floor(Math.random() * 900) + 100 };
+	var rand = function(){ return Math.floor(Math.random() * 50) + 100 };
 	temp.style.backgroundColor = 'rgb(' + rand() + ', ' + color + ', ' + rand() + ')';
 }
-var rand = function(){ return Math.floor(Math.random() * 900) + 100 };
+var rand = function(){ return Math.floor(Math.random() * 200) + 100 };
 
 for(var i = 0; i < (9*7); i++){
 	color += 4;
@@ -35,10 +35,16 @@ for(var i = 0; i < (9*7); i++){
 
 for (var i = 0; i < myArr.length; i++) {
 	body[0].appendChild(myArr[i]);
+	console.log('hello fumi')
 };
+
+var sound = new Audio('60s.mp3');
+
+
 
 window.onload = function() {
     var currentColor = 'red';
+    sound.play()
     setInterval(function() {
     	currentColor = currentColor === 'red' ? 'green' : 'red';
         for (var i = 0; i < div.length; i++) {
