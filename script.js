@@ -35,10 +35,9 @@ for(var i = 0; i < (9*7); i++){
 
 for (var i = 0; i < myArr.length; i++) {
 	body[0].appendChild(myArr[i]);
-	console.log('hello fumi')
 };
 
-var sound = new Audio('60s.mp3');
+var sound = new Audio('kidsInAmerica.mp3');
 
 
 
