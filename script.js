@@ -15,7 +15,7 @@ function setSize(temp){
 }
 
 function colorizer_gradient(temp){
-	var rand = function(){ return Math.floor(Math.random() * 900) + 200 };
+	var rand = function(){ return Math.floor(Math.random() * 900) + 100 };
 	temp.style.backgroundColor = 'rgb(' + rand() + ', ' + color + ', ' + rand() + ')';
 }
 var rand = function(){ return Math.floor(Math.random() * 900) + 100 };
@@ -42,7 +42,7 @@ window.onload = function() {
     setInterval(function() {
     	currentColor = currentColor === 'red' ? 'green' : 'red';
         for (var i = 0; i < div.length; i++) {
-        	div[i].style.backgroundColor = 'rgb(' + rand() + ', ' + color + ', ' + rand() + ')';
+        	div[i].style.backgroundColor = 'rgb(' + rand() + ', ' + rand() + ', ' + rand() + ')';
         };
     }, 1000);
 };
